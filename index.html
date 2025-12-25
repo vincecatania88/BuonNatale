@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Un passo alla volta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+<!-- NEVE -->
+<div id="snow"></div>
+
+<div id="game">
+
+  <div class="level active" data-level="1">
+    <h2>Livello 1</h2>
+    <p>Clicca il pulsante.<br>Non cambia nulla. Ma cliccalo lo stesso.</p>
+    <button onclick="nextLevel()">Clic</button>
+  </div>
+
+  <div class="level" data-level="2">
+    <h2>Livello 2</h2>
+    <p>Trascina il pallino fino alla fine.</p>
+    <div id="track">
+      <div id="box"></div>
+    </div>
+  </div>
+
+  <div class="level" data-level="3">
+    <h2>Livello 3</h2>
+    <p>Non serve correre.<br>Basta andare.</p>
+    <div class="path">
+      <div class="player" id="player">🏃🏻‍♀️</div>
+      <div id="dust-container"></div>
+    </div>
+  </div>
+
+  <div class="level" data-level="4">
+    <h2>Livello 4</h2>
+    <p>Respira. Aspetta 10 secondi.</p>
+    <p id="timer">10</p>
+  </div>
+
+  <div class="level" data-level="5">
+    <h2>Fine</h2>
+    <p class="final">
+      Non devi essere forte.<br>
+      Non devi farcela.<br><br>
+      Sei già abbastanza così ❤️
+      <br><br>
+      🎄 Buon Natale 🎄<br>
+      da chi ti vuole bene.
+    </p>
+  </div>
+
+</div>
+
+<script src="./assets/script.js"></script>
+<audio id="bg-music" src="./assets/media/audio/musica-natalizia.mp3" autoplay></audio>
+</body>
+</html>
